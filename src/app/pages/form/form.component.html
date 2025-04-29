@@ -6,10 +6,20 @@
     <li></li>
   </ul>
   <app-logo></app-logo>
+
   <form class="form" (ngSubmit)="onSubmit($event)">
-    <app-input [title]="'Que ideia você quer transformar em palavras?'" [placeholder]="'Digite o que está pensando'"
-      (valueChange)="handleInputChange($event)"></app-input>
+    <app-input
+      [title]="'Que ideia você quer transformar em palavras?'"
+      [placeholder]="'Digite o que está pensando'"
+      (valueChange)="handleInputChange($event)">
+    </app-input>
+
     <app-submit-button></app-submit-button>
+
+    <div *ngIf="isLoading" class="spinner-container">
+      <mat-spinner diameter="40" strokeWidth="4" color="#FF02DD"></mat-spinner>
+    </div>
   </form>
+
   <router-outlet />
 </main>
