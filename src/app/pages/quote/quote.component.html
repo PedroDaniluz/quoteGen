@@ -1,11 +1,14 @@
 <main class="main">
-    <ul class="balls">
-      <li [style.background-color]="hex1"></li>
-      <li [style.background-color]="hex1"></li>
-      <li [style.background-color]="hex2"></li>
-      <li [style.background-color]="hex2"></li>
-    </ul>
-    <app-logo></app-logo>
-    <div> {{ citacao }} </div>
-    <div> {{ filosofo }} </div>
-  </main>
+  <ul class="balls">
+    <li [style.background-color]="hex1"></li>
+    <li [style.background-color]="hex1"></li>
+    <li [style.background-color]="hex2"></li>
+    <li [style.background-color]="hex2"></li>
+  </ul>
+  <app-logo></app-logo>
+  <div class="quote">
+    <h3> "{{ citacao }}" </h3>
+    <p> {{ filosofo }} </p>
+    <span> {{ movimento }} </span>
+  </div>
+</main>

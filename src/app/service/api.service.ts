@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private apiUrl = 'http://localhost:5000/api/quote'; // URL da sua API Flask
+  private apiUrl = 'http://34.230.203.66/api/quote'; // URL da sua API Flask
 
   constructor(private http: HttpClient) { }
 

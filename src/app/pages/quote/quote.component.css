@@ -10,14 +10,12 @@
     justify-content: center;
 }
 
-
 .balls li {
     position: absolute;
     border-radius: 50%;
     filter: blur(80px);
 }
 
-/* Estilizar cada bola por ordem */
 .balls li:nth-child(1) {
     width: 800px;
     height: 600px;
@@ -48,4 +46,22 @@
     background-color: #FF02DD;
     bottom: -200px;
     right: -200px;
+}
+
+.quote {
+    width: 35vw;
+    color: #313638;
+    font-size: 1.5rem;
+}
+
+.quote h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.quote span {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #313638;
 }
