@@ -1,0 +1,15 @@
+<main class="main">
+  <ul class="balls">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <app-logo></app-logo>
+  <form class="form" (ngSubmit)="onSubmit($event)">
+    <app-input [title]="'Que ideia você quer transformar em palavras?'" [placeholder]="'Digite o que está pensando'"
+      (valueChange)="handleInputChange($event)"></app-input>
+    <app-submit-button></app-submit-button>
+  </form>
+  <router-outlet />
+</main>

@@ -1,0 +1,47 @@
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    gap: 48px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #666;
+    font-size: 1rem;
+    color: #666;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    background-image: none;
+    background-size: 200% 2px;
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+}
+
+.input-container input:focus {
+    outline: none;
+    background-color: #E8E9EB;
+    border-bottom: none;
+    background-image: linear-gradient(90deg, #FF02DD, #00F392);
+    animation: moveLine 2s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
