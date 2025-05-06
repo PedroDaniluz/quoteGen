@@ -7,11 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private apiUrl = 'http://34.230.203.66/api/quote'; // URL da sua API Flask
+  private apiUrl = 'http://34.230.203.66/api/quote';
 
   constructor(private http: HttpClient) { }
 
-  // Função para enviar a mensagem para a API Flask
   enviarMensagem(mensagem: string): Observable<any> {
     return this.http.post<any>(this.apiUrl, { mensagem });
   }
